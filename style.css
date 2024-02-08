@@ -1,1 +1,46 @@
 /*# sourceMappingURL=style.css.map */
+
+html{
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.pop{font-family: 'Poppins', sans-serif;}
+
+.container{
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ヘッダー */
+header{
+  padding: 27px 0;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+
+.header_menu li{
+  font-size: 11px;
+  margin-left: 40px;
+}
+
+.header_menu li a{
+  transition: .3s;
+}
+
+.header_menu li a:hover{
+  color: cornflowerblue;
+  transition: .3s;
+}
