@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- リセットcss -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <!-- リセットcss -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
 
-    <!-- style.css -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="./style.css">
 
-    <!--　Google font　-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- loading.css -->
+  <link rel="stylesheet" href="/animation/loading.css">
+
+  <!-- ホバー時css -->
+  <link rel="stylesheet" href="/animation/hover_Action.css">
+
+  <!--　Google font　-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+
 
 </head>
 
 <body>
+
+
+  <!-- Loading Animationの実装 -->
+  <div id="container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p>LOADING</p>
+  </div>
+
+
+  <!-- Animation Program for js -->
+  <script>
+
+    const loading = document.querySelector('#container');
+    window.addEventListener('load', () => {
+      loading.classList.add('hide');
+    }, false);
+
+  </script>
+
+
+
+
+
+
   <header>
+
     <dib class="container flex pop">
       <a href="" class="logo">
         CUC FISHING CLUB
@@ -36,9 +74,10 @@
       </nav>
     </dib>
   </header>
-    <h1>hello world !!</h1>
-    <h2>hello world !!</h2>
-    <h2>hello world !!</h2>
+  <h1>hello world !!</h1>
+  <h2>hello world !!</h2>
+  <h2>hello world !!</h2>
 
 </body>
+
 </html>
