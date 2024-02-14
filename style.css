@@ -310,22 +310,22 @@ text-align: center;
   z-index: 1;
   display: block;
 }
-.image_inner{
+.image_next_inner{
 z-index: 2;
 color: #ffffff;
 width: 100%;
 text-align: center;
 }
-.image_inner p{
+.image_next_inner p{
   font-size: 20px;
   font-weight: 500;
 }
-.image_inner h1{
+.image_next_inner h1{
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.image_inner a{
+.image_next_inner a{
   font-size: 16px;
   font-weight: 700;
   padding: 16px 30px 16px ;
@@ -336,7 +336,7 @@ text-align: center;
   border-radius: 6px;
   transition: .3s;
 }
-.image_inner a:hover{
+.image_next_inner a:hover{
 background-color: black;
 }
 
