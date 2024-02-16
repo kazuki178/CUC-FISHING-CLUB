@@ -1,0 +1,163 @@
+header {
+  padding: 27px 0;
+}
+header .container {
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+}
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .pop {
+  font-family: "Poppins", sans-serif;
+}
+header .container.flex.pop .logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+header .container.flex.pop .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .container.flex.pop .header_menu li {
+  font-size: 11px;
+  margin-left: 40px;
+}
+header .container.flex.pop .header_menu li a {
+  transition: 0.3s;
+}
+header .container.flex.pop .header_menu li a:hover {
+  color: aqua;
+  transition: 0.3s;
+}
+
+main .image {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  position: relative;
+  overflow: hidden;
+}
+main .image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 1;
+  display: block;
+}
+main .image .image_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+main .image .image_inner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+main .image .image_inner h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+main .section1 {
+  padding: 30px 15px;
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .section1 .headline {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+}
+main .section1 .target {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .section1 .target .target_image {
+  height: 400px;
+  border-radius: 16px;
+}
+main .section1 .target .target_caption {
+  padding-left: 15px;
+  margin-left: 40px;
+}
+main .section1 .target .target_caption h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+main .section1 .target .target_caption .target_p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-image: url(./target.imaige/top.footer.JPG);
+  background-position: bottom;
+  background-size: cover;
+  height: 700px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.footer .footer_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.footer .footer_inner .pop {
+  font-family: "Poppins", sans-serif;
+}
+.footer .footer_inner p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer .footer_inner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer .footer_inner .sns_btn {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}/*# sourceMappingURL=target.css.map */
