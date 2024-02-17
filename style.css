@@ -3,6 +3,9 @@ html {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+header {
+  padding: 27px 0;
+}
 header .container {
   max-width: 1080;
   width: 90%;
