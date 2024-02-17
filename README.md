@@ -1,6 +1,5 @@
-# tableTennisClub
 
-## CUC FISHING CLUB 
+# CUC FISHING CLUB 
 **千葉商科大学釣りサークル**
 
 2021年千葉商科大学釣りサークルは誕生しました。
