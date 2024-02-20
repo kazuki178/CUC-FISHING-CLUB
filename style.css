@@ -39,7 +39,7 @@ header .container.flex.pop .header_menu li a {
   transition: 0.3s;
 }
 header .container.flex.pop .header_menu li a:hover {
-  color: aqua;
+  color: rgb(71, 188, 235);
   transition: 0.3s;
 }
 
