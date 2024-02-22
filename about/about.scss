@@ -68,7 +68,7 @@ header {
 main {
 
   & .image {
-    background-image: url();
+    background-image: url(./about.image/about.top.jpeg);
     background-position: center;
     background-size: cover;
     height: 750px;
@@ -110,6 +110,43 @@ main {
       }
     }
   }
+
+& .section1{
+  margin-bottom: 120px;
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+  & .headline{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  & .flex{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    
+
+    & .about_p{
+      font-size: 17px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    & .about_image{
+      width: 100%;
+      height: 350px;
+      border-radius: 16px;
+      margin-left: 40px;
+    }
+  }
+}
+
+& .section2{
+  
 }
 
 
@@ -166,4 +203,5 @@ main {
       justify-content: center;
     }
   }
+}
 }
