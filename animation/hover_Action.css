@@ -22,11 +22,10 @@
 
 .underline::after {
     position: absolute;
-
     left: 0;
     content: '';
     width: 100%;
-    height: 2.5px;
+    height: 2px;
     background: #000000;
     bottom: -6px;
     transform: scale(0, 1);
