@@ -1,3 +1,8 @@
+html {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 header {
   padding: 27px 0;
 }
@@ -78,7 +83,7 @@ main .image .image_inner h1 {
   font-weight: 700;
 }
 main .section1 {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
   max-width: 1080;
   width: 90%;
   margin: 0 auto;
@@ -107,12 +112,24 @@ main .section1 .flex .about_image {
   margin-left: 40px;
 }
 main .section2 {
-  padding-top: 45px;
+  padding-top: 40px;
 }
 main .section2 .container {
   max-width: 1080;
   width: 90%;
   margin: 0 auto;
+  position: relative;
+}
+main .section2 .container .heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 150px;
+  font-weight: 500;
+  color: #5881f1;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50px);
 }
 main .section2 .container .headline {
   font-size: 28px;
@@ -127,7 +144,7 @@ main .section2 .container hr {
 }
 main .section2 .container .headline_2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 18px;
   line-height: 1.5;
 }
@@ -137,10 +154,179 @@ main .section2 .container .about_p {
 }
 main .section2 .container .row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
+main .section2 .container .row .col {
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
 main .section2 .container .row .col .image {
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+}
+main .section3 {
+  padding-top: 40px;
+}
+main .section3 .container {
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+main .section3 .container .heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 150px;
+  font-weight: 500;
+  color: #5881f1;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-20px);
+}
+main .section3 .container .headline {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+main .section3 .container hr {
+  border: solid 1.7px #808080;
+  margin-bottom: 20px;
+  width: 80%;
+}
+main .section3 .container .headline_2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+main .section3 .container .about_p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+main .section3 .container .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .section3 .container .row .col {
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
+main .section3 .container .row .col .image {
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+}
+main .section4 {
+  padding-top: 40px;
+}
+main .section4 .container {
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+main .section4 .container .heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 150px;
+  font-weight: 500;
+  color: #5881f1;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-20px);
+}
+main .section4 .container .headline {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+main .section4 .container hr {
+  border: solid 1.7px #808080;
+  margin-bottom: 20px;
+  width: 80%;
+}
+main .section4 .container .headline_2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+main .section4 .container .about_p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+main .section4 .container .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .section4 .container .row .col {
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
+main .section4 .container .row .col .image {
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+}
+main .section5 {
+  padding-top: 40px;
+}
+main .section5 .container {
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+main .section5 .container .heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 150px;
+  font-weight: 500;
+  color: #5881f1;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-20px);
+}
+main .section5 .container .headline {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+main .section5 .container hr {
+  border: solid 1.7px #808080;
+  margin-bottom: 20px;
+  width: 80%;
+}
+main .section5 .container .headline_2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+main .section5 .container .about_p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+main .section5 .container .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .section5 .container .row .col {
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
+main .section5 .container .row .col .image {
   width: 100%;
   height: 400px;
   border-radius: 16px;
