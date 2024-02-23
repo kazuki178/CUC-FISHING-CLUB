@@ -1,0 +1,201 @@
+html {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  padding: 27px 0;
+}
+header .container {
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+}
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .pop {
+  font-family: "Poppins", sans-serif;
+}
+header .container.flex.pop .logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+header .container.flex.pop .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .container.flex.pop .header_menu li {
+  font-size: 11px;
+  margin-left: 40px;
+}
+header .container.flex.pop .header_menu li a {
+  transition: 0.3s;
+}
+header .container.flex.pop .header_menu li a:hover {
+  color: rgb(71, 188, 235);
+  transition: 0.3s;
+}
+
+main .image {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  position: relative;
+  overflow: hidden;
+}
+main .image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 1;
+  display: block;
+}
+main .image .image_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+main .image .image_inner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+main .image .image_inner h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+main .section1 {
+  padding-top: 90px;
+  margin-bottom: 150px;
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+}
+main .section1 .QandA-1 {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  margin-bottom: 90px;
+}
+main .section1 .QandA-1 h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+main .section1 .QandA-1 dt {
+  background: #8eaaf7;
+  color: #fff;
+  padding: 8px;
+  border-radius: 2px;
+}
+main .section1 .QandA-1 dt:before {
+  content: "Q.";
+  font-weight: bold;
+  margin-right: 8px;
+}
+main .section1 .QandA-1 dd {
+  margin: 24px 16px 40px 32px;
+  line-height: 140%;
+  text-indent: -24px;
+}
+main .section1 .QandA-1 dd:before {
+  content: "A.";
+  font-weight: bold;
+  margin-right: 8px;
+}
+main .section1 .QandA-2 {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  margin-bottom: 90px;
+}
+main .section1 .QandA-2 h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+main .section1 .QandA-2 dt {
+  background: #9d9e9f;
+  color: #fff;
+  padding: 8px;
+  border-radius: 2px;
+}
+main .section1 .QandA-2 dt:before {
+  content: "Q.";
+  font-weight: bold;
+  margin-right: 8px;
+}
+main .section1 .QandA-2 dd {
+  margin: 24px 16px 40px 32px;
+  line-height: 140%;
+  text-indent: -24px;
+}
+main .section1 .QandA-2 dd:before {
+  content: "A.";
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.footer {
+  background-image: url(./faq.image/top.footer.JPG);
+  background-position: bottom;
+  background-size: cover;
+  height: 700px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 1;
+  display: block;
+}
+.footer .footer_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.footer .footer_inner .pop {
+  font-family: "Poppins", sans-serif;
+}
+.footer .footer_inner p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer .footer_inner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer .footer_inner .sns_btn {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}/*# sourceMappingURL=FAQ.css.map */
