@@ -1,3 +1,9 @@
+html {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
 // headerーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 header {
   padding: 27px 0;
@@ -292,43 +298,43 @@ main {
   overflow: hidden;
 
   &::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.7;
-    z-index: 1;
-    display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+      z-index: 1;
+      display: block;
   }
 
   & .footer_inner {
-    z-index: 2;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
+      z-index: 2;
+      color: #ffffff;
+      width: 100%;
+      text-align: center;
 
-    & .pop {
-      font-family: "Poppins", sans-serif;
-    }
+      & .pop {
+          font-family: "Poppins", sans-serif;
+      }
 
-    & p {
-      font-size: 20px;
-      font-weight: 500;
-    }
+      & p {
+          font-size: 20px;
+          font-weight: 500;
+      }
 
-    & h1 {
-      font-size: 50px;
-      font-weight: 700;
-      margin-bottom: 30px;
-    }
+      & h1 {
+          font-size: 50px;
+          font-weight: 700;
+          margin-bottom: 30px;
+      }
 
-    & .sns_btn {
-      display: flex;
-      margin-top: 40px;
-      justify-content: center;
-    }
+      & .sns_btn {
+          display: flex;
+          margin-top: 40px;
+          justify-content: center;
+      }
   }
 }

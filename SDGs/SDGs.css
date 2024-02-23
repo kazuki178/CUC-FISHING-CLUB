@@ -1,0 +1,44 @@
+html {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  padding: 27px 0;
+}
+header .container {
+  max-width: 1080;
+  width: 90%;
+  margin: 0 auto;
+}
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .pop {
+  font-family: "Poppins", sans-serif;
+}
+header .container.flex.pop .logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+header .container.flex.pop .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .container.flex.pop .header_menu li {
+  font-size: 11px;
+  margin-left: 40px;
+}
+header .container.flex.pop .header_menu li a {
+  transition: 0.3s;
+}
+header .container.flex.pop .header_menu li a:hover {
+  color: rgb(71, 188, 235);
+  transition: 0.3s;
+}/*# sourceMappingURL=SDGs.css.map */
