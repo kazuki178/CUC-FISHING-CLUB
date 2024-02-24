@@ -49,7 +49,7 @@ header {
                     transition: .3s;
 
                     &:hover {
-                        color: rgb(71, 188, 235);
+                        color: rgb(43, 72, 233);
                         transition: .3s;
                     }
                 }
@@ -424,6 +424,12 @@ main {
             display: flex;
             margin-top: 40px;
             justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        & ul{
+          text-align: center;
+          padding-top: 10px;
         }
     }
 } 

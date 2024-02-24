@@ -49,7 +49,7 @@ header {
           transition: .3s;
 
           &:hover {
-            color: aqua;
+            color: rgb(43, 72, 233);
             transition: .3s;
           }
         }
@@ -110,7 +110,7 @@ main {
     max-width: 1080;
     width: 90%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 
@@ -186,7 +186,7 @@ main {
             line-height: 1.5;
           }
           & .image{
-            height: 400px;
+            height: 500px;
             border-radius: 16px;
           }
         }
@@ -194,93 +194,9 @@ main {
     }
   }
 
-  .section3{
-    padding-top: 60px;
-    margin-bottom: 60px;
-    & h1 {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      margin: 0 0 40px 0;
-    }
-    & .container{
-      max-width: 1080px;
-      width: 90%;
-      margin: 0 auto;
-      & .section3_row{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 60px;
-        & .col{
-          width: 46%;
-          & h2 {
-            font-size: 26px;
-            font-weight: 500;
-            margin-bottom: 18px;
-            line-height: 1.3;
-          }
-          & hr{
-            border: solid 2px #808080;
-            margin-bottom: 20px;
-            width: 80px;
-          }
-          & p{
-            line-height: 1.5;
-          }
-          & .image{
-            height: 400px;
-            border-radius: 16px;
-          }
-        }
-      }
-    }
-  }
 
-  .section4{
-    padding-top: 60px;
-    margin-bottom: 60px;
-    & h1 {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      margin: 0 0 40px 0;
-    }
-    & .container{
-      max-width: 1080px;
-      width: 90%;
-      margin: 0 auto;
-      & .section4_row{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 60px;
-        & .col{
-          width: 46%;
-          & h2 {
-            font-size: 26px;
-            font-weight: 500;
-            margin-bottom: 18px;
-            line-height: 1.3;
-          }
-          & hr{
-            border: solid 2px #808080;
-            margin-bottom: 20px;
-            width: 80px;
-          }
-          & p{
-            line-height: 1.5;
-          }
-          & .image{
-            height: 400px;
-            border-radius: 16px;
-          }
-        }
-      }
-    }
-  }
+
+
 }
 
 
@@ -335,6 +251,13 @@ main {
           display: flex;
           margin-top: 40px;
           justify-content: center;
+          margin-bottom: 20px;
       }
+
+      & ul{
+        text-align: center;
+        padding-top: 10px;
+      }
+
   }
 }
