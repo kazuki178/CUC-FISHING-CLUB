@@ -39,7 +39,7 @@ header .container.flex.pop .header_menu li a {
   transition: 0.3s;
 }
 header .container.flex.pop .header_menu li a:hover {
-  color: rgb(71, 188, 235);
+  color: rgb(43, 72, 233);
   transition: 0.3s;
 }
 
@@ -247,4 +247,9 @@ main .section4 .container .text {
   display: flex;
   margin-top: 40px;
   justify-content: center;
+  margin-bottom: 20px;
+}
+.footer .footer_inner ul {
+  text-align: center;
+  padding-top: 10px;
 }/*# sourceMappingURL=SDGs.css.map */
