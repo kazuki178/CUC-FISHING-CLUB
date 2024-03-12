@@ -20,30 +20,32 @@ header .flex {
 header .pop {
   font-family: "Poppins", sans-serif;
 }
-header .container.flex.pop .logo {
+
+.container.flex.pop .logo {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.07em;
 }
-header .container.flex.pop .flex {
+.container.flex.pop .flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
-header .container.flex.pop .header_menu li {
+
+.header_menu li {
   font-size: 11px;
   margin-left: 40px;
 }
-header .container.flex.pop .header_menu li a {
+.header_menu li a {
   transition: 0.3s;
 }
-header .container.flex.pop .header_menu li a:hover {
+.header_menu li a:hover {
   color: rgb(43, 72, 233);
   transition: 0.3s;
 }
 
-main .image {
+.image {
   background-image: url(./faq.image/main.top.png);
   background-position: center;
   background-size: cover;
@@ -55,7 +57,7 @@ main .image {
   position: relative;
   overflow: hidden;
 }
-main .image::before {
+.image::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -67,86 +69,88 @@ main .image::before {
   z-index: 1;
   display: block;
 }
-main .image .image_inner {
+
+.image_inner {
   z-index: 2;
   color: #ffffff;
   width: 100%;
   text-align: center;
 }
-main .image .image_inner p {
+.image_inner p {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-main .image .image_inner h1 {
+.image_inner h1 {
   font-size: 50px;
   font-weight: 700;
 }
-main .section1 {
+
+.section1 {
   padding-top: 90px;
   margin-bottom: 150px;
   max-width: 1080;
   width: 90%;
   margin: 0 auto;
 }
-main .section1 .QandA-1 {
+.section1 .QandA-1 {
   width: 100%;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
   margin-bottom: 90px;
 }
-main .section1 .QandA-1 h2 {
+.section1 .QandA-1 h2 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-main .section1 .QandA-1 dt {
+.section1 .QandA-1 dt {
   background: #8eaaf7;
   color: #fff;
   padding: 8px;
   border-radius: 2px;
 }
-main .section1 .QandA-1 dt:before {
+.section1 .QandA-1 dt:before {
   content: "Q.";
   font-weight: bold;
   margin-right: 8px;
 }
-main .section1 .QandA-1 dd {
+.section1 .QandA-1 dd {
   margin: 24px 16px 40px 32px;
   line-height: 140%;
   text-indent: -24px;
 }
-main .section1 .QandA-1 dd:before {
+.section1 .QandA-1 dd:before {
   content: "A.";
   font-weight: bold;
   margin-right: 8px;
 }
-main .section1 .QandA-2 {
+.section1 .QandA-2 {
   width: 100%;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
   margin-bottom: 90px;
 }
-main .section1 .QandA-2 h2 {
+.section1 .QandA-2 h2 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-main .section1 .QandA-2 dt {
+.section1 .QandA-2 dt {
   background: #9d9e9f;
   color: #fff;
   padding: 8px;
   border-radius: 2px;
 }
-main .section1 .QandA-2 dt:before {
+.section1 .QandA-2 dt:before {
   content: "Q.";
   font-weight: bold;
   margin-right: 8px;
 }
-main .section1 .QandA-2 dd {
+.section1 .QandA-2 dd {
   margin: 24px 16px 40px 32px;
   line-height: 140%;
   text-indent: -24px;
 }
-main .section1 .QandA-2 dd:before {
+.section1 .QandA-2 dd:before {
   content: "A.";
   font-weight: bold;
   margin-right: 8px;
@@ -176,31 +180,32 @@ main .section1 .QandA-2 dd:before {
   z-index: 1;
   display: block;
 }
-.footer .footer_inner {
+
+.footer_inner {
   z-index: 2;
   color: #ffffff;
   width: 100%;
   text-align: center;
 }
-.footer .footer_inner .pop {
+.footer_inner .pop {
   font-family: "Poppins", sans-serif;
 }
-.footer .footer_inner p {
+.footer_inner p {
   font-size: 20px;
   font-weight: 500;
 }
-.footer .footer_inner h1 {
+.footer_inner h1 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.footer .footer_inner .sns_btn {
+.footer_inner .sns_btn {
   display: flex;
   margin-top: 40px;
   justify-content: center;
   margin-bottom: 20px;
 }
-.footer .footer_inner ul {
+.footer_inner ul {
   text-align: center;
   padding-top: 10px;
 }/*# sourceMappingURL=FAQ.css.map */
