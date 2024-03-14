@@ -62,7 +62,34 @@ header {
 
 
 
+.header_active {
+  transform: translateX(0%) !important;
+}
 
+.burger {
+  display: none;
+  cursor: pointer;
+
+  & div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
 
 
 
@@ -403,4 +430,85 @@ header {
     padding-top: 10px;
   }
 
+}
+
+
+
+// レスポンシブ
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  // header、バーガーメニュー
+    .burger {
+      display: block;
+    }
+    .header_menu {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      width: 65%;
+      z-index: 3;
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in;
+    }
+    .header_menu li{
+      opacity: 1;
+      font-size: 16px;
+    }
+
+
+  .image_inner {
+    & p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    & h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+  }
+
+
+// フッター
+.footer_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+
+  & .pop {
+    font-family: "Poppins", sans-serif;
+  }
+
+  & p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  & h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  & .sns_btn {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  & ul{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+}
 }
