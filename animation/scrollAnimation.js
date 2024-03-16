@@ -10,6 +10,15 @@ ScrollReveal({ reset: true, distance: "50px", duration: 500 });
 
 // logo headerのスライドanimation
 ScrollReveal().reveal('.logo, .header_menu', { delay: 400, origin: "left" });
+
+//バーガーメニューの開閉animation
+const burger = document.querySelector(".burger");
+const header = document.querySelector(".header_menu");
+burger.addEventListener("click", () => {
+  header.classList.toggle("header_active");
+  burger.classList.toggle("toggle");
+});
+
 // image内テキストのcontact以外をスライドするanimation
 ScrollReveal().reveal('.image_inner .pop', { delay: 400, origin: "top" });
 
