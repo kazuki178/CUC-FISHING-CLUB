@@ -7,10 +7,6 @@ html {
 header {
   padding: 27px 0;
 
-  nav {
-    justify-content: space-around;
-  }
-
   & .container {
       max-width: 1080;
       width: 90%;
@@ -80,35 +76,17 @@ header {
 }
 
 
-
-
-@media screen and (max-width: 768px) {
-body{
-  overflow-x: hidden;
-}
-// header、バーガーメニュー
-  .burger {
-    display: block;
-  }
-  .header_menu{
-    position: absolute;
-    right: 0;
-    height: 92vh;
-    top: 8vh;
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    width: 65%;
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in-out;
-    
-  }
-  .header_menu li{
+@keyframes headerlinksFade{
+  0%{
     opacity: 0;
-    font-size: 16px;
+    transform: translateX(50px);
   }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-} 
 
 
 .toggle .line1{
@@ -120,7 +98,6 @@ body{
 .toggle .line3{
   transform: rotate(405deg) translate(-5px,-6px);
 }
-
 
 
 
@@ -452,7 +429,7 @@ body{
       background-color: #ffffff;
       flex-direction: column;
       align-items: center;
-      width: 65%;
+      width: 100%;
       transform: translateX(100%);
       transition: transform 0.4s ease-in-out;
     }
@@ -513,14 +490,4 @@ body{
 }
 }
 
-@keyframes headerlinksFade{
-  0%{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 

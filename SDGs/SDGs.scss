@@ -61,6 +61,7 @@ header {
 
 .header_active {
   transform: translateX(0%) !important;
+  z-index: 3;
 }
 
 .burger {
@@ -76,6 +77,16 @@ header {
   }
 }
 
+@keyframes headerlinksFade{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 
 .toggle .line1{
@@ -85,8 +96,13 @@ header {
   opacity: 0;
 }
 .toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(405deg) translate(-5px,-6px);
 }
+
+
+
+
+
 
 // main -------------------------------------------------------
 
@@ -351,4 +367,87 @@ header {
     padding-top: 10px;
   }
 
+}
+
+// レスポンシブデザイン
+
+// ヘッダー
+
+
+
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  // header、バーガーメニュー
+    .burger {
+      display: block;
+    }
+    .header_menu {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in-out;
+    }
+    .header_menu li{
+      opacity: 0;
+      font-size: 16px;
+    }
+
+
+  .image_inner {
+    & p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    & h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+  }
+
+
+// フッター
+.footer_inner {
+  z-index: 2;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+
+  & .pop {
+    font-family: "Poppins", sans-serif;
+  }
+
+  & p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  & h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  & .sns_btn {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  & ul{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+}
 }

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <!-- リセットcss -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    <!-- リセットcss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
 
-  <!-- style.css -->
-  <link rel="stylesheet" href="./target.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./target.css">
 
-  <!--　Google font　-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet">
+    <!--　Google font　-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet">
 
-  <!-- loading.css -->
-  <link rel="stylesheet" href="/animation/loading.css">
+    <!-- loading.css -->
+    <link rel="stylesheet" href="/animation/loading.css">
 
-  <!-- ホバー時css -->
-  <link rel="stylesheet" href="/animation/hover_Action.css">
-</head>
+    <!-- ホバー時css -->
+    <link rel="stylesheet" href="/animation/hover_Action.css">
 
-<body>
+
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
 
     <!-- Loading Animationの実装 -->
     <div id="container">
@@ -35,11 +39,11 @@
       <span></span>
       <p>LOADING</p>
     </div>
-  
-  
+
+
     <!-- Animation Program for js -->
     <script>
-  
+
       const loading = document.querySelector('#container');
       window.addEventListener('load', () => {
         loading.classList.add('hide');
@@ -47,12 +51,12 @@
     </script>
 
 
-  <header>
-    <div class="container flex pop">
-      <a href="http://127.0.0.1:3000/index.html" class="logo underline">
-        CUC FISHING CLUB
-      </a>
-      <nav>
+    <header>
+      <div class="container flex pop">
+        <a href="http://127.0.0.1:3000/index.html" class="logo underline">
+          CUC FISHING CLUB
+        </a>
+        <nav>
           <ul class="header_menu flex">
             <li><a href="http://127.0.0.1:3000/about/about.html">CUC釣りサークルについて</a></li>
             <li><a href="http://127.0.0.1:3000/target/Target.html">ターゲット</a></li>
@@ -65,157 +69,163 @@
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="image">
-      <div class="image_inner">
-        <p class="pop">CUC FISHING CLUB
-        </p>
-        <h1 class="pop">
-          Targets
-        </h1>
+        </nav>
       </div>
-    </section>
+    </header>
+
+    <main>
+      <section class="image">
+        <div class="image_inner">
+          <p class="pop">CUC FISHING CLUB
+          </p>
+          <h1 class="pop">
+            Targets
+          </h1>
+        </div>
+      </section>
 
 
 
-    <section class="section2">
-      <h1>Sea Targets</h1>
-      <div class="container">
-        <div class="section2_row">
-          <div class="col">
-            <h2>スズキ（シーバス）</h2>
-            <hr>
-            <p>
-              スズキは釣り人から「シーバス」と呼ばれ、食味の良さ、引きの強さ、釣りのゲーム性の高さから多くの釣り人から愛されている魚です。<br>
-              <br>東京湾はシーバスの生息数が多く、シーバスフィッシングの聖地と言えます。ルアーと呼ばれる疑似餌で釣りあげる、ルアーフィッシングの入門にぴったりです。
-              ほぼ1年中狙うことができ、釣りサークルでも主要なターゲットとなっています。
-            </p>
+      <section class="section2">
+        <h1>Sea Targets</h1>
+        <div class="container">
+          <div class="section2_row">
+            <div class="col">
+              <h2>スズキ（シーバス）</h2>
+              <hr>
+              <p>
+                スズキは釣り人から「シーバス」と呼ばれ、食味の良さ、引きの強さ、釣りのゲーム性の高さから多くの釣り人から愛されている魚です。<br>
+                <br>東京湾はシーバスの生息数が多く、シーバスフィッシングの聖地と言えます。ルアーと呼ばれる疑似餌で釣りあげる、ルアーフィッシングの入門にぴったりです。
+                ほぼ1年中狙うことができ、釣りサークルでも主要なターゲットとなっています。
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/taget.seabass.jpeg" alt="スズキ（シーバス）">
+            </div>
           </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/taget.seabass.jpeg" alt="スズキ（シーバス）">
+          <div class="section2_row">
+            <div class="col">
+              <h2>青物（イナダ、ワラサ、サワラ等）</h2>
+              <hr>
+              <p>
+                近年、東京湾の釣り人の間で人気が高まる魚たちです。食味の良さはもちろん、強烈な魚の引きを味わうことができます。<br>
+                東京湾では秋が最盛期です。秋になると必ず狙いに行きたくなるターゲットたちです。
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/top.img5.jpeg" alt="サワラ">
+            </div>
+          </div>
+          <div class="section2_row">
+            <div class="col">
+              <h2>アジ</h2>
+              <hr>
+              <p>
+                食卓に並ぶことの多い大衆魚ですが、釣り人を楽しませてくれる魅力的なターゲットです。<br>
+                餌を使った釣り、疑似餌を使った釣り、両方で楽しむことができます。餌を使った釣りでは初心者でも比較的簡単に魚を釣りことができ、初心者に大人気なターゲットです。
+                疑似餌を使った釣りは、ゲーム性が非常に高く中上級者でも楽しむことができます。
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/aji.target.jpg" alt="アジ">
+            </div>
           </div>
         </div>
-        <div class="section2_row">
-          <div class="col">
-            <h2>青物（イナダ、ワラサ、サワラ等）</h2>
-            <hr>
-            <p>
-              近年、東京湾の釣り人の間で人気が高まる魚たちです。食味の良さはもちろん、強烈な魚の引きを味わうことができます。<br>
-              東京湾では秋が最盛期です。秋になると必ず狙いに行きたくなるターゲットたちです。
-            </p>
-          </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/top.img5.jpeg" alt="サワラ">
-          </div>
-        </div>
-        <div class="section2_row">
-          <div class="col">
-            <h2>アジ</h2>
-            <hr>
-            <p>
-              食卓に並ぶことの多い大衆魚ですが、釣り人を楽しませてくれる魅力的なターゲットです。<br>
-              餌を使った釣り、疑似餌を使った釣り、両方で楽しむことができます。餌を使った釣りでは初心者でも比較的簡単に魚を釣りことができ、初心者に大人気なターゲットです。
-              疑似餌を使った釣りは、ゲーム性が非常に高く中上級者でも楽しむことができます。
-            </p>
-          </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/aji.target.jpg" alt="アジ">
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section2">
-      <h1>River Targets</h1>
-      <div class="container">
-        <div class="section2_row">
-          <div class="col">
-            <h2>オオクチバス（ブラックバス）</h2>
-            <hr>
-            <p>
-              川でのルアーフィッシングといったらまずブラックバスです。この魚を釣る「プロ」が存在する、非常にファンの多いターゲットです。<br>
-              ゲーム性が非常に高く、まさに魚との知恵比べ。
-            </p>
+      <section class="section2">
+        <h1>River Targets</h1>
+        <div class="container">
+          <div class="section2_row">
+            <div class="col">
+              <h2>オオクチバス（ブラックバス）</h2>
+              <hr>
+              <p>
+                川でのルアーフィッシングといったらまずブラックバスです。この魚を釣る「プロ」が存在する、非常にファンの多いターゲットです。<br>
+                ゲーム性が非常に高く、まさに魚との知恵比べ。
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/bass.target.jpg" alt="オオクチバス（ブラックバス）">
+            </div>
           </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/bass.target.jpg" alt="オオクチバス（ブラックバス）">
+          <div class="section2_row">
+            <div class="col">
+              <h2>アメリカナマズ<br>（チャネルキャットフィッシュ）</h2>
+              <hr>
+              <p>
+                近年、千葉商科大学近くの江戸川で増加している魚です。大きいもので80㎝を上回る姿はまさに怪魚。
+                餌を使えば比較的簡単に釣ることができ、釣りサークルでも主要なターゲットの1つとなりかけています。<br>
+                食味が良いという噂も．．．
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/catfish.target.jpg" alt="アメリカナマズ">
+            </div>
           </div>
-        </div>
-        <div class="section2_row">
-          <div class="col">
-            <h2>アメリカナマズ<br>（チャネルキャットフィッシュ）</h2>
-            <hr>
-            <p>
-              近年、千葉商科大学近くの江戸川で増加している魚です。大きいもので80㎝を上回る姿はまさに怪魚。
-              餌を使えば比較的簡単に釣ることができ、釣りサークルでも主要なターゲットの1つとなりかけています。<br>
-              食味が良いという噂も．．．
-            </p>
-          </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/catfish.target.jpg" alt="アメリカナマズ">
-          </div>
-        </div>
-        <div class="section2_row">
-          <div class="col">
-            <h2>ハゼ</h2>
-            <hr>
-            <p>
-              食味の良さから、江戸川の河口付近で非常に人気の高いターゲットです。ハゼ釣りの歴史は古く、遠い昔から我々を楽しませてくれている魚です。
-              江戸川の下流域では手漕ぎボートでハゼを狙う釣りが人気。初心者での簡単に狙うことができます。
-              
-            </p>
-          </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/taget.seabass.jpeg" alt="スズキ（シーバス）">
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="section2_row">
+            <div class="col">
+              <h2>ハゼ</h2>
+              <hr>
+              <p>
+                食味の良さから、江戸川の河口付近で非常に人気の高いターゲットです。ハゼ釣りの歴史は古く、遠い昔から我々を楽しませてくれている魚です。
+                江戸川の下流域では手漕ぎボートでハゼを狙う釣りが人気。初心者での簡単に狙うことができます。
 
-    <section class="section2">
-      <h1>Others</h1>
-      <div class="container">
-        <div class="section2_row">
-          <div class="col">
-            <h2>マス類</h2>
-            <hr>
-            <p>
-              冬になり水温が下がり始めると海で狙える魚は少なくなります。マス類の魚たちはその逆、水温が下がってからが本番です。<br>
-              管理釣り場と呼ばれる釣り堀へ行きマス類をルアーで狙います。ゲーム性の高さから、一度ハマると抜けだせません。
-            </p>
-          </div>
-          <div class="col">
-            <img class="image" src="./target.imaige/about_tor2.jpg" alt="イワナ">
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/taget.seabass.jpeg" alt="スズキ（シーバス）">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <section class="section2">
+        <h1>Others</h1>
+        <div class="container">
+          <div class="section2_row">
+            <div class="col">
+              <h2>マス類</h2>
+              <hr>
+              <p>
+                冬になり水温が下がり始めると海で狙える魚は少なくなります。マス類の魚たちはその逆、水温が下がってからが本番です。<br>
+                管理釣り場と呼ばれる釣り堀へ行きマス類をルアーで狙います。ゲーム性の高さから、一度ハマると抜けだせません。
+              </p>
+            </div>
+            <div class="col">
+              <img class="image" src="./target.imaige/about_tor2.jpg" alt="イワナ">
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <section class="footer">
-      <div class="footer_inner">
-        <h1 class="pop">Let's Start Fishing</h1>
-        <p>お気軽にご相談ください！体験も大歓迎です！<br>↓SNSも要チェック！！
-        </p>
-        <ul class="sns_btn">
-          <li><a href="https://twitter.com/CUC86442790" target="_blank>"><img src="./target.imaige/logo-X-white.png" alt="X"></a></li>
-          <li><a href="https://www.instagram.com/cuc_fishingclub/" target="_blank"><img src="./target.imaige/Instagram_White.png" alt="Instagram"></a></li>
-        </ul>
-        <ul><li><a href="https://lin.ee/ZsYqeZV" target="_blank"><img src="./target.imaige/LINE_rog_JP.png" alt="Instagram"></a></li></ul>
-      </div>
-    </section>
-  </footer>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div class="footer_inner">
+          <h1 class="pop">Let's Start Fishing</h1>
+          <p>お気軽にご相談ください！体験も大歓迎です！<br>↓SNSも要チェック！！
+          </p>
+          <ul class="sns_btn">
+            <li><a href="https://twitter.com/CUC86442790" target="_blank>"><img src="./target.imaige/logo-X-white.png"
+                  alt="X"></a></li>
+            <li><a href="https://www.instagram.com/cuc_fishingclub/" target="_blank"><img
+                  src="./target.imaige/Instagram_White.png" alt="Instagram"></a></li>
+          </ul>
+          <ul>
+            <li><a href="https://lin.ee/ZsYqeZV" target="_blank"><img src="./target.imaige/LINE_rog_JP.png"
+                  alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
 
 
     <!-- JSの呼び出し -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./../animation/scrollAnimation.js"></script>
-</body>
+    <script src="/animation/burger.js"></script>
+  </body>
 
 </html>
