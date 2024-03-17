@@ -63,6 +63,7 @@ header {
 
 .header_active {
   transform: translateX(0%) !important;
+  z-index: 3;
 }
 
 .burger {
@@ -79,6 +80,8 @@ header {
 }
 
 
+
+
 @media screen and (max-width: 768px) {
 body{
   overflow-x: hidden;
@@ -87,7 +90,7 @@ body{
   .burger {
     display: block;
   }
-  .header_menu {
+  .header_menu{
     position: absolute;
     right: 0;
     height: 92vh;
@@ -96,16 +99,18 @@ body{
     flex-direction: column;
     align-items: center;
     width: 65%;
-    z-index: 3;
     transform: translateX(100%);
-    transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in-out;
+    
   }
   .header_menu li{
-    opacity: 1;
+    opacity: 0;
     font-size: 16px;
   }
 
 } 
+
+
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -113,7 +118,7 @@ body{
   opacity: 0;
 }
 .toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(405deg) translate(-5px,-6px);
 }
 
 
@@ -448,12 +453,11 @@ body{
       flex-direction: column;
       align-items: center;
       width: 65%;
-      z-index: 3;
       transform: translateX(100%);
-      transition: transform 0.4s ease-in;
+      transition: transform 0.4s ease-in-out;
     }
     .header_menu li{
-      opacity: 1;
+      opacity: 0;
       font-size: 16px;
     }
 
@@ -508,3 +512,15 @@ body{
 
 }
 }
+
+@keyframes headerlinksFade{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
