@@ -31,9 +31,30 @@
   </head>
 
   <body>
+
+      <!-- Loading Animationの実装 -->
+  <div id="container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p>LOADING</p>
+  </div>
+
+
+  <!-- Animation Program for js -->
+  <script>
+
+    const loading = document.querySelector('#container');
+    window.addEventListener('load', () => {
+      loading.classList.add('hide');
+    }, false);
+  </script>
+
+
+
     <header>
       <div class="container flex pop">
-        <a href="http://127.0.0.1:3000/index.html" class="logo">
+        <a href="http://127.0.0.1:3000/index.html" class="logo underline">
           CUC FISHING CLUB
         </a>
         <nav>
@@ -108,8 +129,8 @@
               海岸清掃活動の実施：定期的に地元の海岸や海辺での清掃活動を行い、海洋ごみの削減に努めます。これは地域の他の団体や地域住民の皆さんとの連携を通じて実施していきます。
             </p>
           </div>
-          <div>
-            <img class="about_image" src="./SDGs.image/gomi.jpg" alt="釣りサークル">
+          <div class="image_flex">
+            <!-- <img class="about_image" src="./SDGs.image/gomi.jpg" alt="釣りサークル"> -->
           </div>
         </div>
       </section>
@@ -129,7 +150,7 @@
             </p>
           </div>
           <div>
-            <img class="about_image" src="./SDGs.image/gomi.jpg" alt="釣りサークル">
+            <!-- <img class="about_image" src="./SDGs.image/gomi.jpg" alt="釣りサークル"> -->
           </div>
         </div>
       </section>

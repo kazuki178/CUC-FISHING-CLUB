@@ -33,13 +33,6 @@ header {
           font-weight: 700;
           letter-spacing: -0.07em;
       }
-
-      & .flex {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          align-items: center;
-      }
   }
 
 
@@ -110,7 +103,7 @@ header {
 
 
 .image {
-  background-image: url();
+  background-image: url(./SDGs.image/main.top.png);
   background-position: center;
   background-size: cover;
   height: 750px;
@@ -266,17 +259,15 @@ header {
         }
 
       }
-  
-      & .about_image{
-        width: 100%;
-        height: 350px;
-        border-radius: 16px;
-        margin-left: 40px;
-        margin-bottom: 20px;
-      }
     }
   }
 
+  .about_image{
+    text-align: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+  }
 
 .section4{
   padding-top: 90px;
@@ -414,6 +405,116 @@ header {
     }
   }
 
+
+// メイン  ----------------------------------------------------------------
+.section1 {
+
+  & .flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-right: 50px;
+
+    & .sdgs_image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .sdgs_text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+
+    & h1{
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    & p{
+      font-size: 15px;
+    }
+  }
+}
+
+
+.section2 {
+  & .flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+
+    & .sdgs_image {
+      width: 100%;
+      height: 200px;
+      margin-left: 40px;
+    }
+  }
+
+  & .sdgs_text{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    line-height: 1.5;
+
+    & h1{
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    & p{
+      font-size: 15px;
+    }
+  }
+}
+
+.section3{
+  & hr{
+    border: dotted 1.5px #808080;
+    
+  }
+
+  & .headline{
+    font-size: 20px;
+    font-weight: 500;
+    
+    text-align: center;
+  }
+
+  & .flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 90px;
+    
+
+    & .about_p{
+      font-size: 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      line-height: 1.3;
+
+      & h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+
+    }
+  }
+}
+
+.image_flex{
+text-align: center;
+}
+
+& .about_image{
+  width: 100%;
+  height: 200px;
+}
 
 // フッター
 .footer_inner {

@@ -12,6 +12,12 @@
     <!-- style.css -->
     <link rel="stylesheet" href="./FAQ.css">
 
+    <!-- loading.css -->
+  <link rel="stylesheet" href="/animation/loading.css">
+
+  <!-- ホバー時css -->
+  <link rel="stylesheet" href="/animation/hover_Action.css">
+
     <!--　Google font　-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +31,30 @@
   </head>
 
   <body>
+
+      <!-- Loading Animationの実装 -->
+  <div id="container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p>LOADING</p>
+  </div>
+
+
+  <!-- Animation Program for js -->
+  <script>
+
+    const loading = document.querySelector('#container');
+    window.addEventListener('load', () => {
+      loading.classList.add('hide');
+    }, false);
+  </script>
+
+
+
     <header>
       <div class="container flex pop">
-        <a href="http://127.0.0.1:3000/index.html" class="logo">
+        <a href="http://127.0.0.1:3000/index.html" class="logo underline">
           CUC FISHING CLUB
         </a>
         <nav>
