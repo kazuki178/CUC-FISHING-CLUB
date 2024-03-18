@@ -12,6 +12,12 @@
     <!-- style.css -->
     <link rel="stylesheet" href="./FAQ.css">
 
+    <!-- loading.css -->
+  <link rel="stylesheet" href="/animation/loading.css">
+
+  <!-- ホバー時css -->
+  <link rel="stylesheet" href="/animation/hover_Action.css">
+
     <!--　Google font　-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +25,44 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet">
 
+    <!-- <レスポンシブ> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
   </head>
 
   <body>
+
+      <!-- Loading Animationの実装 -->
+  <div id="container">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p>LOADING</p>
+  </div>
+
+
+  <!-- Animation Program for js -->
+  <script>
+
+    const loading = document.querySelector('#container');
+    window.addEventListener('load', () => {
+      loading.classList.add('hide');
+    }, false);
+  </script>
+
+
+
     <header>
       <div class="container flex pop">
-        <a href="http://127.0.0.1:3000/index.html" class="logo">
+        <a href="http://cucfishingclub.chu.jp/cucfishing/" class="logo underline">
           CUC FISHING CLUB
         </a>
         <nav>
             <ul class="header_menu flex">
-              <li><a href="http://127.0.0.1:3000/about/about.html">CUC釣りサークルについて</a></li>
-              <li><a href="http://127.0.0.1:3000/target/Target.html">ターゲット</a></li>
-              <li><a href="http://127.0.0.1:3000/SDGs/SDGs.html">SDGsへの取り組み</a></li>
-              <li><a href="http://127.0.0.1:3000/faq/FAQ.html">よくあるご質問</a></li>
+              <li><a href="http://cucfishingclub.chu.jp/cucfishing/about/about.html">CUC釣りサークルについて</a></li>
+              <li><a href="http://cucfishingclub.chu.jp/cucfishing/target/Target.html">ターゲット</a></li>
+              <li><a href="http://cucfishingclub.chu.jp/cucfishing/SDGs/SDGs.html">SDGsへの取り組み</a></li>
+              <li><a href="http://cucfishingclub.chu.jp/cucfishing/faq/FAQ.html">よくあるご質問</a></li>
             </ul>
             
             <div class="burger">
@@ -49,7 +79,7 @@
         <div class="image_inner">
           <p class="pop">CUC FISHING CLUB
           </p>
-          <h1 class="text">
+          <h1 class="pop">
             よくあるご質問
           </h1>
         </div>
@@ -164,6 +194,12 @@
         </div>
       </section>
     </footer>
+
+  <!-- JSの呼び出し -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./../animation/scrollAnimation.js"></script>
+  <script src="/animation/burger.js"></script>
+
   </body>
 
 </html>

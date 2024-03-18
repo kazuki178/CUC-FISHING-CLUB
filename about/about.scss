@@ -4,10 +4,8 @@ html {
 }
 
 
-
 header {
   padding: 27px 0;
-
 
   & .container {
       max-width: 1080;
@@ -59,11 +57,9 @@ header {
   }
 }
 
-
-
-
 .header_active {
   transform: translateX(0%) !important;
+  z-index: 3;
 }
 
 .burger {
@@ -80,6 +76,18 @@ header {
 }
 
 
+@keyframes headerlinksFade{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px,6px);
@@ -88,7 +96,7 @@ header {
   opacity: 0;
 }
 .toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(405deg) translate(-5px,-6px);
 }
 
 
@@ -434,7 +442,12 @@ header {
 
 
 
-// レスポンシブ
+// レスポンシブデザイン
+
+// ヘッダー
+
+
+
 @media screen and (max-width: 768px){
   body{
     overflow-x: hidden;
@@ -446,18 +459,17 @@ header {
     .header_menu {
       position: absolute;
       right: 0;
-      height: 92vh;
-      top: 8vh;
+      height: 95vh;
+      top: 5vh;
       background-color: #ffffff;
       flex-direction: column;
       align-items: center;
-      width: 65%;
-      z-index: 3;
+      width: 120%;
       transform: translateX(100%);
-      transition: transform 0.4s ease-in;
+      transition: transform 0.4s ease-in-out;
     }
     .header_menu li{
-      opacity: 1;
+      opacity: 0;
       font-size: 16px;
     }
 
@@ -474,6 +486,12 @@ header {
         margin-bottom: 30px;
     }
   }
+
+
+  // メイン  --------------------------------------------------------------
+
+
+
 
 
 // フッター

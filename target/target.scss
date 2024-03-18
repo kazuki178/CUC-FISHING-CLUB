@@ -8,9 +8,6 @@ html {
 header {
   padding: 27px 0;
 
-  nav {
-    justify-content: space-around;
-  }
 
   & .container {
       max-width: 1080;
@@ -64,6 +61,7 @@ header {
 
 .header_active {
   transform: translateX(0%) !important;
+  z-index: 3;
 }
 
 .burger {
@@ -79,6 +77,16 @@ header {
   }
 }
 
+@keyframes headerlinksFade{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 
 .toggle .line1{
@@ -88,7 +96,7 @@ header {
   opacity: 0;
 }
 .toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(405deg) translate(-5px,-6px);
 }
 
 // メインーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
@@ -260,33 +268,35 @@ header {
 // レスポンシブデザイン
 
 // ヘッダー
-body{
-  overflow-x: hidden;
-}
-// header、バーガーメニュー
-  .burger {
-    display: block;
-  }
-  .header_menu {
-    position: absolute;
-    right: 0;
-    height: 92vh;
-    top: 8vh;
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    width: 65%;
-    z-index: 3;
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in;
-  }
-  .header_menu li{
-    opacity: 1;
-    font-size: 16px;
-  }
+
 
 
 @media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  // header、バーガーメニュー
+    .burger {
+      display: block;
+    }
+    .header_menu {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.4s ease-in-out;
+    }
+    .header_menu li{
+      opacity: 0;
+      font-size: 16px;
+    }
+
+
   .image_inner {
     & p {
         font-size: 15px;
@@ -299,6 +309,58 @@ body{
         margin-bottom: 30px;
     }
   }
+
+
+
+  // メイン  -----------------------------------------------------------
+  .section2{
+    padding-top: 60px;
+    margin-bottom: 60px;
+    & h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0 0 40px 0;
+    }
+  }
+
+    .container{
+      max-width: 1080px;
+      width: 90%;
+      margin: 0 auto;
+      & .section2_row{
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+    }
+
+      .col{
+          width: 80%;
+          & h2 {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 18px;
+            line-height: 1.3;
+          }
+          & hr{
+            border: solid 2px #808080;
+            margin-bottom: 20px;
+            width: 80px;
+          }
+          & p{
+            line-height: 1.5;
+          }
+          & .image{
+            height: 250px;
+            border-radius: 16px;
+          }
+        }
+
+
+
 
 
 // フッター
